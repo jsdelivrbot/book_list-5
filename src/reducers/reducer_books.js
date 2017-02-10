@@ -7,8 +7,8 @@
 export default function() {
   return [ // return array
     {title: 'Coding with Javascript for Dummies'}, // these will be a couple of different books
-    {title: 'Meaningful Work'},
+    {title: 'Meaningful Work'}, // these are a list of objects
     {title: 'Head First Javascript'},
-    {title: 'How To Do Everything With Javascript'},
-  ]
+    {title: 'How To Do Everything With Javascript'}
+  ];
 }
