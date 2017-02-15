@@ -5,7 +5,7 @@
 // with export default any other file in our application can import this one and it will just automatically
 // receive the books reducer.
 export default function() {
-  return [ // return array
+  return [ // return array of books which contains a list of objects
     {title: 'Coding with Javascript for Dummies'}, // these will be a couple of different books
     {title: 'Meaningful Work'}, // these are a list of objects
     {title: 'Head First Javascript'},

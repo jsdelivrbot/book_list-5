@@ -14,8 +14,6 @@ import {connect} from 'react-redux';
 class BookList extends Component {
   // new function
   renderList() {
-
-    debugger
     // plugin our application state as this.props.books
     return this.props.books.map((book) => { // mapping the array
         return (
@@ -26,10 +24,10 @@ class BookList extends Component {
   }
   render() {
     return (
+      // when calling a separate function inside of JSX, we write curly braces
+      // this calls a new function of renderList
+      // helper function, which is a function that helps another function
       <ul className="list-group col-sm-4">
-        // when calling a separate function inside of JSX, we write curly braces
-        // this calls a new function of renderList
-        // helper function, which is a function that helps another function
         {this.renderList()}
       </ul>
     )
