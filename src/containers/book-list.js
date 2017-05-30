@@ -22,7 +22,11 @@ class BookList extends Component {
     return this.props.books.map((book) => { // mapping the array
         return (
           // for each book in the array, we create a list with title
-          <li key={book.title} className="list-group-item">{book.title}</li> // because it is a list we have to add a key
+          <li
+            key={book.title}
+            // Click Event Handler
+            onClick={() => this.props.selectBook(book)}
+            className="list-group-item">{book.title}</li> // because it is a list we have to add a key
         );
     });
   }
