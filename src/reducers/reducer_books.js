@@ -6,9 +6,9 @@
 // receive the books reducer.
 export default function() {
   return [ // return array of books which contains a list of objects
-    {title: 'Coding with Javascript for Dummies'}, // these will be a couple of different books
-    {title: 'Meaningful Work'}, // these are a list of objects
-    {title: 'Head First Javascript'},
-    {title: 'How To Do Everything With Javascript'}
+    {title: 'Coding with Javascript for Dummies', pages: 360}, // these will be a couple of different books
+    {title: 'Meaningful Work', pages: 252}, // these are a list of objects
+    {title: 'Head First Javascript', pages: 652},
+    {title: 'How To Do Everything With Javascript', pages: 448}
   ];
 }

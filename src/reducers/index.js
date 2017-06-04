@@ -3,6 +3,7 @@
 // in order to use React. They are the react library.
 import {combineReducers} from 'redux';
 import BooksReducer from './reducer_books';
+import ActiveBook from './reducer_active_book';
 
 // we need to ensure that this code is generating usable state for our
 // application by creating a booklist component within react
@@ -12,7 +13,8 @@ const rootReducer = combineReducers({
     // passing this into the function combineReducers is essentially telling
     // reduce how to create our application state
     // the single piece of state is books
-    books: BooksReducer
+    books: BooksReducer,
+    activeBook: ActiveBook
 });
 
 export default rootReducer;
